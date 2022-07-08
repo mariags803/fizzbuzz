@@ -2,9 +2,9 @@
 
 
 ## Description
----
 
-Replaces a number if any of the following conditions are met: 
+
+Having a number: 
 
 * If the number is a multiple of 3, returns "fizz"
 * If the number is a multiple of 5, returns "buzz"
@@ -27,7 +27,6 @@ number = 19 // => '19'
 ```
 
 ## Run project
----
 
 __Install__
 
