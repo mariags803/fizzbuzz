@@ -1,50 +1,34 @@
 import {fizzbuzz} from "../fizzbuzz";
-describe("FizzBuzz should", ()=>{
-    it("Number = 1 returns '1'", ()=>{
-        const result = fizzbuzz(1);
-        const expected = "1";
-        expect(result).toBe(expected);
+describe("FizzBuzz", ()=>{
+    it("Returns number 1 as string for number 1", ()=>{
+        expect(fizzbuzz(1)).toBe("1");
     });
 
-    it("Number = 3 returns 'fizz'", ()=>{
-        const result = fizzbuzz(3);
-        const expected = "fizz";
-        expect(result).toBe(expected);
+    it("Returns fizz for number 3", ()=>{
+        expect(fizzbuzz(3)).toBe("fizz");
     });
 
-    it("Number = 5 returns 'buzz'", ()=>{
-        const result = fizzbuzz(5);
-        const expected = "buzz";
-        expect(result).toBe(expected);
+    it("Returns buzz for number 5", ()=>{
+        expect(fizzbuzz(5)).toBe("buzz");
     });
 
-    it("Number = 15 returns 'fizzbuzz'", ()=>{
-        const result = fizzbuzz(15);
-        const expected = "fizzbuzz";
-        expect(result).toBe(expected);
+    it("Returns fizzbuzz for number 15", ()=>{
+        expect(fizzbuzz(15)).toBe("fizzbuzz");
     });
 
-    it("Number = 6 returns '6'", ()=>{
-        const result = fizzbuzz(6);
-        const expected = "fizz";
-        expect(result).toBe(expected);
+    it("Returns fizz for a number that is multiple of 3", ()=>{
+        expect(fizzbuzz(6)).toBe("fizz");
     });
 
-    it("Number = 10 returns 'buzz'", ()=>{
-        const result = fizzbuzz(10);
-        const expected = "buzz";
-        expect(result).toBe(expected);
+    it("Returns buzz for a number that is multiple of 5", ()=>{
+        expect(fizzbuzz(10)).toBe("buzz");
     });
 
-    it("Number = 30 returns 'fizzbuzz'", ()=>{
-        const result = fizzbuzz(30);
-        const expected = "fizzbuzz";
-        expect(result).toBe(expected);
+    it("Returns fizzbuzz for a number that is multiple of 15", ()=>{
+        expect(fizzbuzz(30)).toBe("fizzbuzz");
     });
 
-    it("Number = 19 returns '19'", ()=>{
-        const result = fizzbuzz(19);
-        const expected = "19";
-        expect(result).toBe(expected);
+    it("Returns the number as string if the number is not multiple of 3 or 5", ()=>{
+        expect(fizzbuzz(19)).toBe("19");
     });
 });
